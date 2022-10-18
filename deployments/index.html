@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deployments and requirements</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Connecting to data sources" href="../datasources/index.html" />
+    <link rel="prev" title="Pyplan Cloud - AWS" href="../architecture/pyplan_cloud/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Content
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../architecture/index.html">
+   Architecture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../architecture/kubernetes/index.html">
+     Pyplan and Kubernetes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../architecture/pyplan_cloud/index.html">
+     Pyplan Cloud - AWS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Deployments and requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../datasources/index.html">
+   Connecting to data sources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../user_access_control/index.html">
+   User Access Control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../security_and_compliance/index.html">
+   Security &amp; Compliance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../disaster_recovery/index.html">
+   Disaster Recovery Plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../development_process/index.html">
+   Development process
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../faq/index.html">
+   Frequently asked questions
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyplan/resources/edit/master/docs/deployments/index.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/deployments/index.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deployment-options">
+   Deployment options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyplan-enterprise-saas">
+     Pyplan Enterprise SaaS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#on-customer-cloud">
+     On customer cloud
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aws">
+       AWS
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#azure">
+       Azure
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#on-premise">
+     On premise
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hardware-requirements">
+       Hardware requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#software-requirements">
+       Software requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kubernetes-addons">
+       Kubernetes Addons
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Deployments and requirements</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deployment-options">
+   Deployment options
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyplan-enterprise-saas">
+     Pyplan Enterprise SaaS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#on-customer-cloud">
+     On customer cloud
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#aws">
+       AWS
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#azure">
+       Azure
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#on-premise">
+     On premise
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#hardware-requirements">
+       Hardware requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#software-requirements">
+       Software requirements
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#kubernetes-addons">
+       Kubernetes Addons
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="deployments-and-requirements">
+<h1>Deployments and requirements<a class="headerlink" href="#deployments-and-requirements" title="Permalink to this headline">#</a></h1>
+<div class="section" id="deployment-options">
+<h2>Deployment options<a class="headerlink" href="#deployment-options" title="Permalink to this headline">#</a></h2>
+<p>Pyplan offers several deployment options:</p>
+<ul class="simple">
+<li><p><strong>Pyplan Enterprise SaaS</strong>: In order to ensure a strong, secure foundation, Pyplan Cloud shares security responsibilities with an industry-leading cloud infrastructure provider and valued partner such as <strong>Amazon Web Services</strong>.
+These cloud computing services are used by Pyplan for internal purposes as well as Pyplan clients for their own cloud deployments.</p></li>
+<li><p><strong>On customer cloud</strong>: Pyplan can be deployed in customer clouds (AWS, Azure, GPC, OCI) using the Kubernetes service provided by each cloud provider.</p></li>
+<li><p><strong>On premise</strong>: Pyplan can be deployed on premise and supports installations in physical or virtualized environments.</p></li>
+</ul>
+<div class="section" id="pyplan-enterprise-saas">
+<h3>Pyplan Enterprise SaaS<a class="headerlink" href="#pyplan-enterprise-saas" title="Permalink to this headline">#</a></h3>
+<p>Pyplan Cloud solution offers businesses a world-class analytics and planning platform without the complexities of installing and managing their own deployment.
+for more details refer to <a class="reference external" href="/index.html#pyplan-enterprise-saas-overview">Pyplan Enterprise SaaS Overview</a>.</p>
+</div>
+<div class="section" id="on-customer-cloud">
+<h3>On customer cloud<a class="headerlink" href="#on-customer-cloud" title="Permalink to this headline">#</a></h3>
+<p>Pyplan can be deployed on all major cloud providers using the Kubernetes service. The services required depend on each provider.</p>
+<div class="section" id="aws">
+<h4>AWS<a class="headerlink" href="#aws" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>VPC</p></li>
+<li><p>EKS cluster - K8S API Supported</p>
+<ul>
+<li><p>v1.22</p></li>
+</ul>
+</li>
+<li><p>aws CLI and eksctl CLI</p></li>
+<li><p>Enable some EKS Add-ons</p>
+<ul>
+<li><p>EKS IAM-oidc-provider.</p></li>
+<li><p>EFS-CSI Driver.</p></li>
+<li><p>EKS Autoscaling Driver.</p></li>
+</ul>
+</li>
+<li><p>PostgreSQL RDS instance.</p></li>
+<li><p>Elastic-cache Redis cluster.</p></li>
+<li><p>EKS nodegroups with a specific label.</p></li>
+<li><p>Pyplan resource namespace.</p></li>
+<li><p>NGINX ingress controller.</p></li>
+<li><p>Kubernetes Descheduler.</p></li>
+<li><p>Kubernetes Metrics Server</p></li>
+<li><p>Fileshare in EFS as persistent volume.</p></li>
+<li><p>Bastion host - Linux OS.</p></li>
+<li><p>SSL certificate (AWS ACM).</p></li>
+</ul>
+</div>
+<div class="section" id="azure">
+<h4>Azure<a class="headerlink" href="#azure" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>AKS cluster - K8S API Supported</p>
+<ul>
+<li><p>v1.22</p></li>
+</ul>
+</li>
+<li><p>PostgreSQL Single server.</p></li>
+<li><p>2 AKS nodepool with a specific label.</p></li>
+<li><p>Pyplan resource namespace.</p></li>
+<li><p>Argo-CD for continuous deployment.</p></li>
+<li><p>NGINX ingress controller.</p></li>
+<li><p>Kubernetes Descheduler.</p></li>
+<li><p>Storage accounts</p>
+<ul>
+<li><p>Azure-file premium as persistent volume.</p></li>
+<li><p>A daily backup of the Azure-file created by the Pyplan application, once it is synchronized with Argo-CD.</p></li>
+</ul>
+</li>
+<li><p>Azure VM Bastion machine.</p></li>
+<li><p>Internet access to install Pyplan with a helm chart and synchronize the application with Argo-CD.</p></li>
+<li><p>A DNS with a valid SSL certificate.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="on-premise">
+<h3>On premise<a class="headerlink" href="#on-premise" title="Permalink to this headline">#</a></h3>
+<p>Pyplan is deployed over MicroK8s, so it requires a Linux distribution which supports snapd.
+It can be Debian 10, Ubuntu Server 20.04+, RHEL 7.7+, among others.</p>
+<div class="section" id="hardware-requirements">
+<h4>Hardware requirements<a class="headerlink" href="#hardware-requirements" title="Permalink to this headline">#</a></h4>
+<p>The following table shows the minimum and recommended requirements for 10 simultaneous users.</p>
+<table class="table">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 38%" />
+<col style="width: 37%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Hardware</p></th>
+<th class="head"><p>Minimum Configuration</p></th>
+<th class="head"><p>Recommended Configuration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>CPU</p></td>
+<td><p>3.0GHz Processor (10 logical processors)</p></td>
+<td><p>3.0GHz Processor (10 logical processors)</p></td>
+</tr>
+<tr class="row-odd"><td><p>RAM</p></td>
+<td><p>32 GB (3 GB per user)</p></td>
+<td><p>64 GB (6 GB per user)</p></td>
+</tr>
+<tr class="row-even"><td><p>Disk Space</p></td>
+<td><p>100 GB</p></td>
+<td><p>256 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>File system space allocation</p></td>
+<td><ul class="simple">
+<li><p>/ → 20GB</p></li>
+<li><p>/var → 30GB</p></li>
+<li><p>/pyplan → 50GB</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>/ → 30 GB</p></li>
+<li><p>/var → 50 GB</p></li>
+<li><p>/pyplan → 200 GB</p></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="software-requirements">
+<h4>Software requirements<a class="headerlink" href="#software-requirements" title="Permalink to this headline">#</a></h4>
+<ul class="simple">
+<li><p>Linux OS</p>
+<ul>
+<li><p>Debian 10</p></li>
+<li><p>Ubuntu Server 20.04</p></li>
+<li><p>RHEL 7.7 / 8.0 / 8.2 / 8.3
+- Microk8s Service is currently not available for RHEL 8.4.</p></li>
+<li><p>SUSE 15 SP2+</p></li>
+</ul>
+</li>
+<li><p>Server access with ‘sudo’ permissions to perform the installation of snapd, MicroK8s and other necessary packages.</p></li>
+<li><p>Pyplan uses port 443</p></li>
+<li><p>Pyplan does not run as root, a user with the following attributes is needed
+- uid: 101010
+- user: pyplan_exec</p></li>
+<li><p>An internet connection is required in order to download/install packages and download Pyplan docker images from Docker Hub.</p></li>
+<li><p>Once installed, it is necessary to use a web browser (Chrome) to activate Pyplan.</p></li>
+</ul>
+<p><strong>Special requirements</strong>
+RHEL 7.7: It is necessary to enable the following RedHat repositories with
+subscription-manager</p>
+<ul class="simple">
+<li><p>“rhel-<a href="#id1"><span class="problematic" id="id2">*</span></a>-optional-rpms”</p></li>
+<li><p>“rhel-<a href="#id3"><span class="problematic" id="id4">*</span></a>-extras-rpms”</p></li>
+</ul>
+</div>
+<div class="section" id="kubernetes-addons">
+<h4>Kubernetes Addons<a class="headerlink" href="#kubernetes-addons" title="Permalink to this headline">#</a></h4>
+<p>Pyplan presents extra configurations which are optional</p>
+<ul class="simple">
+<li><p>Cert-Manager Custom Resource Definition (CRD)</p>
+<ul>
+<li><p>An SSL operator that allows anyone to create self-generated certificates for secure connection (HTTPS).</p></li>
+<li><p>A correct DNS configuration is required.</p></li>
+<li><p>The instructions to enable it are detailed in the installation steps.</p></li>
+</ul>
+</li>
+<li><p>K8S Dashboard</p>
+<ul>
+<li><p>Official web-based Kubernetes user interface.</p></li>
+<li><p>A correct DNS configuration is required.</p></li>
+<li><p>A valid SSL certificate is mandatory.</p></li>
+<li><p>The instructions to enable it are detailed in the installation steps</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../architecture/pyplan_cloud/index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Pyplan Cloud - AWS</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../datasources/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Connecting to data sources</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Pyplan Inc.<br/>
+  
+      &copy; Copyright 2022, Pyplan.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

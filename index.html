@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pyplan data and security policies</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Architecture" href="architecture/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="#">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Content
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="architecture/index.html">
+   Architecture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="architecture/kubernetes/index.html">
+     Pyplan and Kubernetes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="architecture/pyplan_cloud/index.html">
+     Pyplan Cloud - AWS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="deployments/index.html">
+   Deployments and requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="datasources/index.html">
+   Connecting to data sources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="user_access_control/index.html">
+   User Access Control
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="security_and_compliance/index.html">
+   Security &amp; Compliance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="disaster_recovery/index.html">
+   Disaster Recovery Plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="development_process/index.html">
+   Development process
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="faq/index.html">
+   Frequently asked questions
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyplan/resources/edit/master/docs/index.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/index.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-pyplan">
+   About Pyplan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#embracing-python-benefits">
+     Embracing Python benefits
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pyplan-enterprise-saas-overview">
+   Pyplan Enterprise SaaS Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pyplan-apps">
+   Pyplan apps
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-single-platform-for-data-analytics-and-business-planning">
+     A single platform for Data Analytics and Business Planning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#in-memory-apps">
+     In-memory apps
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#business-logic">
+     Business Logic
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-interfaces">
+     User Interfaces
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyplan-apps-devops">
+     Pyplan apps devops
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Pyplan data and security policies</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-pyplan">
+   About Pyplan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#embracing-python-benefits">
+     Embracing Python benefits
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pyplan-enterprise-saas-overview">
+   Pyplan Enterprise SaaS Overview
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pyplan-apps">
+   Pyplan apps
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-single-platform-for-data-analytics-and-business-planning">
+     A single platform for Data Analytics and Business Planning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#in-memory-apps">
+     In-memory apps
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#business-logic">
+     Business Logic
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-interfaces">
+     User Interfaces
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pyplan-apps-devops">
+     Pyplan apps devops
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="figure align-default">
+<a class="reference internal image-reference" href="_images/logo.png"><img alt="_images/logo.png" src="_images/logo.png" style="width: 300px;" /></a>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="pyplan-data-and-security-policies">
+<h1>Pyplan data and security policies<a class="headerlink" href="#pyplan-data-and-security-policies" title="Permalink to this headline">#</a></h1>
+<div class="section" id="about-pyplan">
+<h2>About Pyplan<a class="headerlink" href="#about-pyplan" title="Permalink to this headline">#</a></h2>
+<p>Pyplan is the unique Corporate Performance Management (CPM) platform integrating Data Analytics and Business Planning powered by Python.</p>
+<p>It allows the integration of every analytical task that supports corporate decision making in a single place such as: automatically feed off disparate data sources, monitor any key performance indicator, infer trends using self-calibrated predictive models, and simulate impacts across the enterprise to discover the best course of action.</p>
+<p>Pyplan is built-on top of the open source technologies that are conducting the data analytics revolution running on Python: Pandas, Numpy, Dask, SciKit-learn, to name a few of them.</p>
+<p>It supports a full range of users and unlimited use-cases from data collection to decision making: data gathering automation, self-service analytics, interactive dashboards, business planning, simulation and optimization, coordinated data visualization, reporting and collaboration.</p>
+<div class="section" id="embracing-python-benefits">
+<h3>Embracing Python benefits<a class="headerlink" href="#embracing-python-benefits" title="Permalink to this headline">#</a></h3>
+<p>Python has become the most used programming language in the world. The level of innovation and resources (libraries) produced by its open source community can not be matched by any single company running on proprietary software. Using Pyplan, your team will be kindly introduced to start speaking the “Lingua Franca” of Data Science, Python.</p>
+<p>Pyplan offers cutting-edge performance, scalability and governance, with the convenience of SaaS or on-premise deployment and it is specifically designed for business users (no code – low code).</p>
+</div>
+</div>
+<div class="section" id="pyplan-enterprise-saas-overview">
+<h2>Pyplan Enterprise SaaS Overview<a class="headerlink" href="#pyplan-enterprise-saas-overview" title="Permalink to this headline">#</a></h2>
+<p>Pyplan Enterprise is a native cloud platform working in a server-client architecture that can be contracted as a service running on Pyplan Cloud Infrastructure or deployed on-premise over customer’s infrastructure.</p>
+<p>Pyplan Cloud solution offers businesses a world-class analytics and planning platform without the complexities of installing and managing their own deployment.</p>
+<p>We also understand that some businesses prefer to manage their systems running on their own infrastructure. Pyplan Enterprise is also offered to be installed on customer’s infrastructure attending Pyplan requirements.</p>
+</div>
+<div class="section" id="pyplan-apps">
+<h2>Pyplan apps<a class="headerlink" href="#pyplan-apps" title="Permalink to this headline">#</a></h2>
+<div class="section" id="a-single-platform-for-data-analytics-and-business-planning">
+<h3>A single platform for Data Analytics and Business Planning<a class="headerlink" href="#a-single-platform-for-data-analytics-and-business-planning" title="Permalink to this headline">#</a></h3>
+<div class="figure align-default">
+<img alt="_images/pyplan-gbd.png" src="_images/pyplan-gbd.png" />
+</div>
+<p>Pyplan Enterprise allows to host different types of applications (apps) on a single hub. Users create, collaborate and share their insights through apps specifically developed to attend different business cases.</p>
+<p>Applications contain all the data, business rules and documentation, providing a single portal for your users to consume all your analytics, planning and reporting assets.</p>
+</div>
+<div class="section" id="in-memory-apps">
+<h3>In-memory apps<a class="headerlink" href="#in-memory-apps" title="Permalink to this headline">#</a></h3>
+<p>Pyplan apps are composed of two main types of assets: Business Logic and User Interfaces.</p>
+<p>In addition to that, you can find data extraction, transformation and  loading (ETL) processes automation, input forms, user roles and permissions settings.</p>
+</div>
+<div class="section" id="business-logic">
+<h3>Business Logic<a class="headerlink" href="#business-logic" title="Permalink to this headline">#</a></h3>
+<div class="figure align-default">
+<img alt="_images/pyplan-logic.png" src="_images/pyplan-logic.png" />
+</div>
+<p>Pyplan organizes business logic rules in a workflow represented as a hierarchical navigable influence diagram. This way of organizing code presents multiple benefits compared to traditional integrated development environments (IDEs):</p>
+<ul class="simple">
+<li><p>Facilitates the understanding of the logic from a general to a detailed point of view.</p></li>
+<li><p>Makes it easy to run any intermediate calculation and explore results as tables or graphs.</p></li>
+<li><p>Makes it easy to test and tune the app to improve performance.</p></li>
+</ul>
+<p>Pyplan logic is run “on the fly” and data is stored <strong>in-memory</strong> on a workspace created for the user. Pandas dataframes, Numpy arrays and Xarray data-arrays are native objects used for that purpose, but since there is a Python engine running underneath, the user can decide to use any type of object that could better suit for the application purpose. For example, in case you are manipulating geo-data, it is probable you will use Geopandas objects or,  in case you need to deal with big data, it is probable you will use Vaex or PySpark objects.</p>
+<p>All dependencies are automatically calculated ensuring a single result no matter the calculation sequence the user triggers. This is a big differentiation from traditional <strong>Jupyter Notebooks</strong>.</p>
+<p>In case a node pulls information from any external data source, it will be automatically run. There is a Python connector for almost every single data source known which makes integrating a Pyplan application with legacy systems a simple process. That is one of the unmatchable benefits of standing on top of the most innovative data analytics community.</p>
+</div>
+<div class="section" id="user-interfaces">
+<h3>User Interfaces<a class="headerlink" href="#user-interfaces" title="Permalink to this headline">#</a></h3>
+<p>Access to Pyplan SaaS environment is through a web browser interface, known as Pyplan Cloud. The Pyplan web browser interface makes all aspects of development, drag-and-drop content creation and consumption possible.</p>
+<p>Pyplan features a responsive design methodology to automatically display and resize visualizations with the appropriate layout and information to fit the device — whether it is a browser on a laptop or desktop, tablet, or smartphone. Built with current standards of modern applications (React, Material Design and web sockets), Pyplan enables you to build and consume apps on any device.</p>
+</div>
+<div class="section" id="pyplan-apps-devops">
+<h3>Pyplan apps devops<a class="headerlink" href="#pyplan-apps-devops" title="Permalink to this headline">#</a></h3>
+<p><strong>Move apps through a development lifecycle, not development servers</strong></p>
+<p>In a traditional Analytics and Planning environment, apps would be developed on a development server. Once the development is completed, they would be moved to a test server. Issues found in testing would mean several iterations of this process until the application could be deployed to production, requiring a lot of resources and infrastructure to manage.</p>
+<p>With Pyplan Cloud SaaS, apps are stored in separate workspaces. Each workspace has its own security settings, data connections, file storage and runs on its own instance. Customers can create as many development, test and production workspaces as needed to suit their software development life cycle. This approach allows much greater agility and flexibility and reduces infrastructure expenses compared to a traditional on-premise setup.</p>
+<div class="figure align-default">
+<img alt="_images/app-cycle.png" src="_images/app-cycle.png" />
+</div>
+<p>In the above example, users consume the app in the Public (production) workspace. When a change to the app is requested, a copy is made in the user/users (development) workspace. After consolidating changes, the candidate app is published to the Team (test) workspace for review. Several cycles may occur until the app is ready to be released to production.</p>
+<p>To facilitate these flows, each space has its own data connections and file storage, so that an app will load and run the appropriate data for the applicable life-cycle phase.</p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="architecture/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Architecture</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Pyplan Inc.<br/>
+  
+      &copy; Copyright 2022, Pyplan.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

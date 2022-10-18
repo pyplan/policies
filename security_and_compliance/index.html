@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security &amp; Compliance</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Disaster Recovery Plan" href="../disaster_recovery/index.html" />
+    <link rel="prev" title="User Access Control" href="../user_access_control/index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Content
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../architecture/index.html">
+   Architecture
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../architecture/kubernetes/index.html">
+     Pyplan and Kubernetes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../architecture/pyplan_cloud/index.html">
+     Pyplan Cloud - AWS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../deployments/index.html">
+   Deployments and requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../datasources/index.html">
+   Connecting to data sources
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../user_access_control/index.html">
+   User Access Control
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Security &amp; Compliance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../disaster_recovery/index.html">
+   Disaster Recovery Plan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../development_process/index.html">
+   Development process
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../faq/index.html">
+   Frequently asked questions
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyplan/resources/edit/master/docs/security_and_compliance/index.rst"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/security_and_compliance/index.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-sovereignty">
+   Data sovereignty
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-privacy">
+   Data privacy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-separation-storage-transport">
+   Data Separation, storage &amp; transport
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#content-deletion">
+   Content Deletion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#penetration-tests">
+   Penetration tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-security-breach-management-policy-and-procedure">
+   Data Security Breach Management Policy and Procedure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scope">
+     Scope
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessment">
+     Assessment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notification-of-breaches">
+     Notification of Breaches
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#investigation-procedure">
+     Investigation Procedure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#containing-the-breach">
+     Containing the Breach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reporting-breaches">
+     Reporting Breaches
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Security & Compliance</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-sovereignty">
+   Data sovereignty
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-privacy">
+   Data privacy
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-separation-storage-transport">
+   Data Separation, storage &amp; transport
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#content-deletion">
+   Content Deletion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#penetration-tests">
+   Penetration tests
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-security-breach-management-policy-and-procedure">
+   Data Security Breach Management Policy and Procedure
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scope">
+     Scope
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assessment">
+     Assessment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notification-of-breaches">
+     Notification of Breaches
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#investigation-procedure">
+     Investigation Procedure
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#containing-the-breach">
+     Containing the Breach
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#reporting-breaches">
+     Reporting Breaches
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="section" id="security-compliance">
+<h1>Security &amp; Compliance<a class="headerlink" href="#security-compliance" title="Permalink to this headline">#</a></h1>
+<div class="section" id="data-sovereignty">
+<h2>Data sovereignty<a class="headerlink" href="#data-sovereignty" title="Permalink to this headline">#</a></h2>
+<p>Users’ data, including the backup system data, models and disaster recovery, are kept within Pyplan Enterprise region. There is no transfer out of the region.</p>
+</div>
+<div class="section" id="data-privacy">
+<h2>Data privacy<a class="headerlink" href="#data-privacy" title="Permalink to this headline">#</a></h2>
+<p>Pyplan has created exhaustive internal processes to guarantee customer data security.
+Pyplan undertakes to protect customer data and to communicate openly and transparently.</p>
+</div>
+<div class="section" id="data-separation-storage-transport">
+<h2>Data Separation, storage &amp; transport<a class="headerlink" href="#data-separation-storage-transport" title="Permalink to this headline">#</a></h2>
+<p>Pyplan Enterprise is a multi-tenant platform. As a multi-tenant platform, it is crucial that each customer’s data is separated from other customer’s data.
+Each tenant has a working space completely isolated from other’s.
+When a user logs in Pyplan, the corresponding working space is set up as a disc unit, making it impossible to move it to other working spaces.</p>
+<p>Pyplan uses an encrypted file system, relying on the services of a leading provider such as Amazon Web Services (AWS).
+The encryption of the file system has the following features:</p>
+<ul class="simple">
+<li><p><strong>encrypting data at rest</strong>: The AWS key management infrastructure uses Federal Information Processing Standards (FIPS) 140-2 approved cryptographic algorithms. The infrastructure is consistent with National Institute of Standards and Technology (NIST) 800-57 recommendations.</p></li>
+<li><p><strong>encrypting data in transit</strong>: AWS uses TLS version 1.2 to encrypt data in transit.</p></li>
+<li><p><strong>rotation</strong>: AWS generates new cryptographic material for the key every year.</p></li>
+</ul>
+<p>Access to encrypting password management is restricted to qualified staff.</p>
+</div>
+<div class="section" id="content-deletion">
+<h2>Content Deletion<a class="headerlink" href="#content-deletion" title="Permalink to this headline">#</a></h2>
+<p>The creation and removal of content that resides in the tenant is controlled by the customer. Content can be deleted by the customer at any time. Backups are removed after a period of time in accordance with Pyplan Cloud internal data retention policies.</p>
+</div>
+<div class="section" id="penetration-tests">
+<h2>Penetration tests<a class="headerlink" href="#penetration-tests" title="Permalink to this headline">#</a></h2>
+<p>Pyplan performs penetration tests every three month (among other tests) to guarantee all the infrastructure security. The customer can request test result reports whenever necessary.</p>
+<div class="figure align-default">
+<img alt="../_images/pentest.png" src="../_images/pentest.png" />
+</div>
+</div>
+<div class="section" id="data-security-breach-management-policy-and-procedure">
+<h2>Data Security Breach Management Policy and Procedure<a class="headerlink" href="#data-security-breach-management-policy-and-procedure" title="Permalink to this headline">#</a></h2>
+<p>This section details the requirements for identifying, assessing, remediating, reporting and recording data breaches from Pyplan server.</p>
+<div class="section" id="scope">
+<h3>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">#</a></h3>
+<p>This procedure applies to all staff including employees, contractors, trainees and any other personnel who are granted access to Pyplan server.</p>
+</div>
+<div class="section" id="assessment">
+<h3>Assessment<a class="headerlink" href="#assessment" title="Permalink to this headline">#</a></h3>
+<p>A security incident is any event or occurrence that affects or tends to affect data protection, or may compromise the availability, integrity, and confidentiality of data. It includes incidents that would result in a data breach, if not for safeguards that have been put in place.</p>
+<p>A data breach happens when there is a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, data transmitted, stored, or otherwise processed.</p>
+</div>
+<div class="section" id="notification-of-breaches">
+<h3>Notification of Breaches<a class="headerlink" href="#notification-of-breaches" title="Permalink to this headline">#</a></h3>
+<p>Any person who becomes aware of a possible breach of privacy involving personal information in the custody or control of Pyplan will immediately inform Pyplan personnel through email to <a class="reference external" href="mailto:support&#37;&#52;&#48;novix&#46;com">support<span>&#64;</span>novix<span>&#46;</span>com</a> writing  its subject as “DATA BREACH WARNING”.</p>
+<p>In the body of the email the incident and the name of the accounts estimated to be exposed should be explained.</p>
+</div>
+<div class="section" id="investigation-procedure">
+<h3>Investigation Procedure<a class="headerlink" href="#investigation-procedure" title="Permalink to this headline">#</a></h3>
+<p>The investigation procedure will begin immediately after receiving notification.</p>
+<p>The investigation procedure includes:</p>
+<ul class="simple">
+<li><p>Pyplan Access logs review to validate and confirm data breach</p></li>
+<li><p>User access restriction and password reset</p></li>
+<li><p>User activity logs review (IP addresses, access time, activity logs) to determine type of breach</p></li>
+</ul>
+</div>
+<div class="section" id="containing-the-breach">
+<h3>Containing the Breach<a class="headerlink" href="#containing-the-breach" title="Permalink to this headline">#</a></h3>
+<p>Pyplan will take the following steps to limit the scope and effect of the breach. These steps will include:</p>
+<ul class="simple">
+<li><p>shutting down the system that was breached</p></li>
+<li><p>correcting weaknesses in security in case they exist</p></li>
+<li><p>stopping unauthorized access</p></li>
+<li><p>restoring the system to previous status in case data was modified or deleted</p></li>
+<li><p>recovering the records</p></li>
+<li><p>close monitoring user activities to detect unusual behaviors</p></li>
+</ul>
+</div>
+<div class="section" id="reporting-breaches">
+<h3>Reporting Breaches<a class="headerlink" href="#reporting-breaches" title="Permalink to this headline">#</a></h3>
+<p>After the system has been fixed and the service has been reset, it will be submitted a report informing the client the details of the event to decide any further action.</p>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../user_access_control/index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">User Access Control</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../disaster_recovery/index.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Disaster Recovery Plan</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Pyplan Inc.<br/>
+  
+      &copy; Copyright 2022, Pyplan.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
