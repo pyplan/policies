@@ -12,8 +12,8 @@ jobs:
       uses: ammaraskar/sphinx-action@master
       with:
         build-command: "sphinx-build -b html . _build/html"
-    - name: Create CNAME
-      run: sudo echo "security.pyplan.com" > docs/_build/html/CNAME
+    - name: Copy CNAME
+      run: sudo cp docs/_static/CNAME docs/_build/html/
       shell: bash
     - name: Upload artifacts
       uses: actions/upload-artifact@v1
