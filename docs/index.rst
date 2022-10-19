@@ -11,18 +11,19 @@
    :caption: Content
    :titlesonly:
 
-   architecture/index
+   pyplan_cloud/index
    deployments/index
    datasources/index
    user_access_control/index
    security_and_compliance/index
    disaster_recovery/index
    development_process/index
+   human_resources/index
    faq/index
 
-===============================================
+=================================
 Pyplan data and security policies
-===============================================
+=================================
 
 
 
