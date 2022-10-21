@@ -34,3 +34,23 @@ Do you have procedures in place to ensure that only authorized individuals have 
 Only the source code administrator has the capability to add/remove permissions on repositories.
 In the "off-boarding" process, access to the repositories is removed.
 
+
+Are all employees required to undergo incident and breach response training
+---------------------------------------------------------------------------
+As part of the on-boarding process, a cybersecurity officer meets with the new employee and they review the content related to security and data processing.
+
+
+What are your network security policies for your office locations?
+------------------------------------------------------------------
+In order to ensure a strong, secure foundation, Pyplan Cloud shares security responsibilities with an industry leading cloud infrastructure vendor and valued partner.
+All data is stored using AWS services, in private networks that can only be accessed through the application.
+
+The security policies in our offices are as follows:
+
+- Access to the local network is through mac address registration. 
+- The local network is segmented in 3 sub-networks (not accessible to each other):
+  
+  - main network
+  - secondary network
+  - guest network
+- Access administration is performed by qualified personnel, with clear and defined responsibilities.
