@@ -14,7 +14,7 @@
    pyplan_cloud/index
    deployments/index
    datasources/index
-   user_access_control/index
+   access_management_policy/index
    security_and_compliance/index
    disaster_recovery/index
    development_process/index

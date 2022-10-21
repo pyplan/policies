@@ -13,7 +13,9 @@ A reference diagram for our Cloud deployment is shown below:
 
 .. figure:: images/pyplan-aws.png
 
-The access to infrastructure management is performed exclusively by qualified staff, implementing all the security measures offered by the supplier (i.e., Multi-factor Authentication (MFP), Internet Protocol (IP) filtering, etc.).      
+The access to infrastructure management is performed exclusively by qualified staff, implementing all the security measures offered by the supplier 
+(i.e., VPN, Multi-factor Authentication (MFA), IP filtering, etc.).      
+
 
 
 Pyplan and Kubernetes 

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Access Control</title>
+    <title>Access Management Policy</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -107,7 +107,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   User Access Control
+   Access Management Policy
   </a>
  </li>
  <li class="toctree-l1">
@@ -204,7 +204,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/user_access_control/index.rst.txt"
+        <a href="../_sources/access_management_policy/index.rst.txt"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -264,14 +264,36 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#concepts">
-   Concepts
+  <a class="reference internal nav-link" href="#purpose">
+   Purpose
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#user-activity-monitoring">
-   User activity monitoring
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identification">
+   Identification
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#authentication">
+   Authentication
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#concepts">
+     Concepts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-activity-monitoring">
+     User activity monitoring
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -282,7 +304,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>User Access Control</h1>
+                <h1>Access Management Policy</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -293,14 +315,36 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#concepts">
-   Concepts
+  <a class="reference internal nav-link" href="#purpose">
+   Purpose
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#user-activity-monitoring">
-   User activity monitoring
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#identification">
+   Identification
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#authentication">
+   Authentication
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#concepts">
+     Concepts
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-activity-monitoring">
+     User activity monitoring
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -312,28 +356,58 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="user-access-control">
-<h1>User Access Control<a class="headerlink" href="#user-access-control" title="Permalink to this headline">#</a></h1>
-<p>Pyplan allows authentication through an Identity Provider using SAML 2.0. protocol. This ensures that the application adheres to all the authentication policies existing in the company. In case of not using authentication via Identity Provider (IdP), Pyplan allows the use of its own authentication system. Some of its characteristics are:</p>
+  <div class="section" id="access-management-policy">
+<h1>Access Management Policy<a class="headerlink" href="#access-management-policy" title="Permalink to this headline">#</a></h1>
+<div class="section" id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">#</a></h2>
+<p>The purpose of this policy is to define required access control measures to protect the privacy, security, and confidentiality of all technology resources.</p>
+</div>
+<div class="section" id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Passwords have the following restrictions:</p>
-<ul>
+<li><p>Access: The ability to use, modify or manipulate an information resource or to gain entry to a physical area or location.</p></li>
+<li><p>Access Control: The process of granting or denying specific requests for obtaining and using information. The purpose of access controls is to prevent unauthorized access to IT systems.</p></li>
+<li><p>Availability: Protection of IT systems and data to ensure timely and reliable access to and use of information to authorized users.</p></li>
+<li><p>Confidentiality: Protection of sensitive information so that it is not disclosed to unauthorized individuals, entities or processes.</p></li>
+<li><p>Principle of Least Privilege: Access privileges for any user should be limited to resources absolutely essential for completion of assigned duties or functions, and nothing more.</p></li>
+<li><p>Principle of Separation of Duties—Whenever practical, no one person should be responsible for completing or controlling a task, or set of tasks,
+from beginning to end when it involves the potential for fraud, abuse, or other harm.</p></li>
+</ul>
+</div>
+<div class="section" id="identification">
+<h2>Identification<a class="headerlink" href="#identification" title="Permalink to this headline">#</a></h2>
+<p>Identification is the process of assigning an identifier to every individual or system to enable decisions about the levels of access that should be given.
+Identifiers must contain the following:</p>
+<ul class="simple">
+<li><p>Uniqueness:  Each identifier is unique; that is, each identifier is associated with a single person</p></li>
+<li><p>One Identifier per Individual: An individual may have no more than one identification number</p></li>
+<li><p>Non-Reassignment: Once an identifier is assigned to a particular person it is always associated with that person. It is never subsequently reassigned to identify another person</p></li>
+</ul>
+</div>
+<div class="section" id="authentication">
+<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">#</a></h2>
+<p>The authentication process determines whether someone or something is, in fact, who or what it is declared to be.
+Authentication validates the identity of the person.
+Authentication methods involve presenting both a public identifier such as a user name and private authentication information, such as password.</p>
+<p>Pyplan allows authentication through an Identity Provider using SAML 2.0. protocol. This ensures that the application adheres to all the authentication policies existing in the company.
+In case of not using authentication via Identity Provider (IdP), Pyplan allows the use of its own authentication system.</p>
+<p>To ensure that passwords are of adequate strength, passwords for users, systems, applications, and
+devices must meet, to the degree technically feasible, the following Information Security
+requirements:</p>
+<ul class="simple">
 <li><p>at least 10 characters</p></li>
 <li><p>at least one upper case character</p></li>
 <li><p>at least one lower case character</p></li>
 <li><p>at least one special character</p></li>
-<li><p>no expiration (on roadmap by mid-2022)</p></li>
 <li><p>reset after 3 failed login tries</p></li>
 <li><p>no password recovery (in case of loss, a new password must be generated)</p></li>
-</ul>
-</li>
-<li><p>Multifactor authentication is not implemented (on roadmap by 2023)</p></li>
-<li><p>Each user has a unique, non-reusable identifier</p></li>
+<li><p>expiration every 90 days (coming soon)</p></li>
+<li><p>multifactor authentication (coming soon)</p></li>
 </ul>
 <p>Pyplan uses the Role concept to restrict the access of users to certain application functions. Departments are used for information restriction.
 Pyplan uses the principle of least privilege.</p>
 <div class="section" id="concepts">
-<h2>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">#</a></h2>
+<h3>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">#</a></h3>
 <p><strong>Company</strong>: it identifies the company to which the user belongs. It is the highest-level entity and it groups the rest of the entities.</p>
 <p><strong>Roles</strong>: These are a set of permissions that deny or enable different functionalities of the application. Pyplan has an administrator that allows to define which Roles can have access to which application functions.</p>
 <div class="figure align-default">
@@ -348,10 +422,11 @@ Pyplan uses the principle of least privilege.</p>
 <p><strong>Users</strong>: it unequivocally identifies each application user. In case of using the own Pyplan user authentication system, the minimum information of each user shall be its login, full name, e-mail address and status (active/inactive).</p>
 </div>
 <div class="section" id="user-activity-monitoring">
-<h2>User activity monitoring<a class="headerlink" href="#user-activity-monitoring" title="Permalink to this headline">#</a></h2>
+<h3>User activity monitoring<a class="headerlink" href="#user-activity-monitoring" title="Permalink to this headline">#</a></h3>
 <p>Pyplan provides a tool that allows system administrators to monitor each action performed by every user.
 This information is saved and stored for a 6 month period by default and this information is not modifiable.
 The fields stored are:</p>
+</div>
 </div>
 </div>
 
