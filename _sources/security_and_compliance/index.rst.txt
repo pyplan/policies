@@ -105,3 +105,45 @@ Reporting Breaches
 ------------------
 
 After the system has been fixed and the service has been reset, it will be submitted a report informing the client the details of the event to decide any further action. 
+
+
+--------------------------------------
+Pyplan Cloud network security policies
+--------------------------------------
+
+In order to ensure a strong, secure foundation, Pyplan Cloud shares security responsibilities with an industry leading cloud infrastructure vendor and valued partner.
+All data is stored using AWS services, in private networks that can only be accessed through the application.
+
+All remote access to Pypan cloud infrastructure will either be through a secure VPN connection on a Pyplan owned device that has up-to-date anti-virus software. 
+
+Remote access using VPN can only be performed from authorized IP addresses.
+
+Users must not install network hardware or software that provides network services without IT approval.
+
+Users must not download, install, or run security programs or utilities that reveal weaknesses in the security of a system. 
+
+Secure remote access must be strictly controlled. Control will be enforced with Multi- Factor Authentication (MFA).
+
+Only IT approved VPN clients may be used.
+
+
+------------------
+Teleworking policy
+------------------
+
+In order to ensure a strong, secure foundation, Pyplan Cloud shares security responsibilities with an industry leading cloud infrastructure vendor and valued partner.
+All data is stored using AWS services, in private networks that can only be accessed through the application.
+
+No organizational or customer data is stored in our offices. The offices are used as a work meeting point or to provide a suitable workplace.
+However, we have the following policies related to teleworking:
+
+ - The employee shall designate a workspace, within the remote work location, for placement and installation of equipment to be used while teleworking
+ - The employee shall maintain this workspace in a safe condition, free from hazards and other dangers to the employee and equipment
+ - All applicable policies for acceptable use, protection of member information, security, etc, shall be observed
+ - Personally owned equipment may not be connected to Pyplan owned equipment
+ - The employee is responsible for securing the equipment provided to the employee by the IT Department
+ - The employee will not modify any equipment without written authorization from the IT Department.
+
+
+
+

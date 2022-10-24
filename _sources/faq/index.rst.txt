@@ -54,3 +54,32 @@ The security policies in our offices are as follows:
   - secondary network
   - guest network
 - Access administration is performed by qualified personnel, with clear and defined responsibilities.
+
+
+
+Do you require all workstations to have antivirus/anti-malware software installed?
+----------------------------------------------------------------------------------
+
+We use McAfee with automatic updates 
+
+
+Do you have an Intrusion Detection System/Intrusion Prevention System in place?
+-------------------------------------------------------------------------------
+
+We use Amazon GuardDuty for this purpose
+
+
+Do you have a mobile device policy?
+-----------------------------------
+
+In order to ensure a strong, secure foundation, Pyplan Cloud shares security responsibilities with an industry leading cloud infrastructure vendor and valued partner.
+All data is stored using AWS services, in private networks that can only be accessed through the application.
+Since the data is stored only using AWS services, the mobile phone usage policies are reduced to the following:
+
+- prior to initial use on the network or related infrastructure, all personally owned mobile devices must be registered with IT.
+- utilize a device lock with authentication, such as a fingerprint or strong password, on each participating device. Refer to the  password policy for additional information.
+- it is essential that mobile users not use unencrypted connections to WiFi access points, and even encrypted public WiFi access should only be used if absolutely necessary.
+- employees agree to never disclose their passwords to anyone, particularly to family members, if business work is conducted from home.
+- exercise reasonable physical security measures. It is the end users responsibility to keep their equipment safe and secure.
+- a device’s firmware/operating system must be up-to-date in order to prevent vulnerabilities and make the device more stable. The patching and updating processes are the responsibility of the owner.
+- any non-corporate computers used to synchronize with the  equipment will have installed anti-virus and anti-malware software deemed necessary by IT Department. Anti-virus signature files must be up to date on any additional client machines – such as a home PC – on which this media will be accessed.
