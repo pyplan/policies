@@ -137,13 +137,32 @@ All data is stored using AWS services, in private networks that can only be acce
 No organizational or customer data is stored in our offices. The offices are used as a work meeting point or to provide a suitable workplace.
 However, we have the following policies related to teleworking:
 
- - The employee shall designate a workspace, within the remote work location, for placement and installation of equipment to be used while teleworking
- - The employee shall maintain this workspace in a safe condition, free from hazards and other dangers to the employee and equipment
- - All applicable policies for acceptable use, protection of member information, security, etc, shall be observed
- - Personally owned equipment may not be connected to Pyplan owned equipment
- - The employee is responsible for securing the equipment provided to the employee by the IT Department
- - The employee will not modify any equipment without written authorization from the IT Department.
+- The employee shall designate a workspace, within the remote work location, for placement and installation of equipment to be used while teleworking
+- The employee shall maintain this workspace in a safe condition, free from hazards and other dangers to the employee and equipment
+- All applicable policies for acceptable use, protection of member information, security, etc, shall be observed
+- Personally owned equipment may not be connected to Pyplan owned equipment
+- The employee is responsible for securing the equipment provided to the employee by the IT Department
+- The employee will not modify any equipment without written authorization from the IT Department.
 
 
 
+Network and applications security audits
+----------------------------------------
 
+The IT department performs periodic network and application security audits. The controls performed in these audits allow:
+
+- Identify potential threats
+- Ensure the protection of data.
+- Find network inefficiencies.
+- Improve weak company policies and practices.
+
+The following are some of the tasks performed in the audit process:
+
+- Determine threats: a list of the most common potential threats is made.
+- Inspect your servers: ensures that all network configurations are set up correctly
+- Penetration testing: penetration tests are one of the main methods of finding vulnerabilities in a network. These tests assess the viability of a system and identify security gaps.
+- Static application security testing (SAST): tests are performed using code vulnerability detection tools.
+- Assess backup strategies: the backup strategies are reviewed and checked for any shortcomings.
+- Reinforce firewalls: logs, current rules and permissions are reviewed for weaknesses
+- Set up log monitoring: the process of monitoring event logs is reviewed. 
+- Review and edit internal policies: internal protocols are reviewed for systematic failures.
