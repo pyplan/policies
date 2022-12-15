@@ -404,6 +404,8 @@ requirements:</p>
 <li><p>expiration every 90 days (coming soon)</p></li>
 <li><p>multifactor authentication (coming soon)</p></li>
 </ul>
+<p>In case of not using authentication via Identity Provider (IdP), Pyplan uses the PBKDF2 algorithm with a SHA256 hash, a password stretching mechanism recommended by NIST,
+to store the password.</p>
 <p>Pyplan uses the Role concept to restrict the access of users to certain application functions. Departments are used for information restriction.
 Pyplan uses the principle of least privilege.</p>
 <div class="section" id="concepts">

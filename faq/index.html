@@ -327,6 +327,11 @@ title="Print to PDF"
    Do you have hardening controls in place?
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-segregation">
+   Data segregation
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -409,6 +414,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#do-you-have-hardening-controls-in-place">
    Do you have hardening controls in place?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-segregation">
+   Data segregation
   </a>
  </li>
 </ul>
@@ -508,6 +518,10 @@ Application end users only access via web browser using secure protocols (TLS).<
 <li><p>Lack, or deficiency, of privileged access controls.</p></li>
 <li><p>Unencrypted, or inadequately encrypted, network traffic or data at rest.</p></li>
 </ul>
+</div>
+<div class="section" id="data-segregation">
+<h2>Data segregation<a class="headerlink" href="#data-segregation" title="Permalink to this headline">#</a></h2>
+<p>Pyplan is deployed on Kubernetes. When a user logs into the Pyplan, a dedicated user pod is created and that pod only has access to the disk drive assigned to the user’s company.</p>
 </div>
 </div>
 
