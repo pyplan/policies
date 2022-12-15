@@ -100,3 +100,8 @@ Controls performed for hardening are:
 - Hardcoded passwords and other credentials stored in plain text.
 - Lack, or deficiency, of privileged access controls.
 - Unencrypted, or inadequately encrypted, network traffic or data at rest.
+
+Data segregation
+----------------
+
+Pyplan is deployed on Kubernetes. When a user logs into the Pyplan, a dedicated user pod is created and that pod only has access to the disk drive assigned to the user's company.
