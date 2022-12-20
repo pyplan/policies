@@ -131,7 +131,7 @@ The execution of the change may involve several items such as systems, infrastru
 
 * Development
 * Testing
-* Homologation
+* Homologate
 
  
 
