@@ -105,3 +105,55 @@ Data segregation
 ----------------
 
 Pyplan is deployed on Kubernetes. When a user logs into the Pyplan, a dedicated user pod is created and that pod only has access to the disk drive assigned to the user's company.
+
+
+Do you have a change management process
+---------------------------------------
+
+Change management is the process established to understand and minimize risks while making changes. The main objective is to ensure that changes are executed with as much control and predictability as possible, while minimally affecting the service being changed.
+
+ 
+The change process occurs in three steps:
+
+1. Request
+2. Execution
+3. Preparation
+4. Implementation
+
+ 
+**Request**: 
+The beginning of the cycle of change of an application is initiated with a formal request for service through a form by the customer areas. From this request, the Systems area performs an analysis and, if necessary, initiates the change of the application.
+
+ 
+
+**Execution**:
+The execution of the change may involve several items such as systems, infrastructure, processes, etc., involving the following steps:
+
+* Development
+* Testing
+* Homologation
+
+ 
+
+**Preparation**:
+After the approval of the change by the requester, the process of implementing the change begins. This process includes the following activities:
+
+* Plan the implementation of the change
+* Schedule the change (according to the change window of each application)
+* Notify those involved (areas involved, customers, etc.)
+  
+To start the implementation process you must:
+
+* Fill out the document that contains the main information for planning the execution of the change
+* Fill out the spreadsheet that contains the steps to be carried out
+* Request authorization from the application owner using the form
+* If approved, implement the change as planned
+* If disapproved, the whole process is canceled and must be resumed if necessary
+* If necessary, the approver may request additional information and/or adjustments that he/she deems necessary before approving the change
+
+ 
+
+**Implementation**: 
+After the approval of the change, the person responsible for the implementation must perform the necessary procedures to ensure that the planned steps are carried out.
+If the change is successfully implemented, notify involved parties and close the process.
+If the change was not successfully executed, trigger the rollback plan.

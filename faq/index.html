@@ -332,6 +332,11 @@ title="Print to PDF"
    Data segregation
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#do-you-have-a-change-management-process">
+   Do you have a change management process
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -419,6 +424,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#data-segregation">
    Data segregation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#do-you-have-a-change-management-process">
+   Do you have a change management process
   </a>
  </li>
 </ul>
@@ -522,6 +532,46 @@ Application end users only access via web browser using secure protocols (TLS).<
 <div class="section" id="data-segregation">
 <h2>Data segregation<a class="headerlink" href="#data-segregation" title="Permalink to this headline">#</a></h2>
 <p>Pyplan is deployed on Kubernetes. When a user logs into the Pyplan, a dedicated user pod is created and that pod only has access to the disk drive assigned to the user’s company.</p>
+</div>
+<div class="section" id="do-you-have-a-change-management-process">
+<h2>Do you have a change management process<a class="headerlink" href="#do-you-have-a-change-management-process" title="Permalink to this headline">#</a></h2>
+<p>Change management is the process established to understand and minimize risks while making changes. The main objective is to ensure that changes are executed with as much control and predictability as possible, while minimally affecting the service being changed.</p>
+<p>The change process occurs in three steps:</p>
+<ol class="arabic simple">
+<li><p>Request</p></li>
+<li><p>Execution</p></li>
+<li><p>Preparation</p></li>
+<li><p>Implementation</p></li>
+</ol>
+<p><strong>Request</strong>:
+The beginning of the cycle of change of an application is initiated with a formal request for service through a form by the customer areas. From this request, the Systems area performs an analysis and, if necessary, initiates the change of the application.</p>
+<p><strong>Execution</strong>:
+The execution of the change may involve several items such as systems, infrastructure, processes, etc., involving the following steps:</p>
+<ul class="simple">
+<li><p>Development</p></li>
+<li><p>Testing</p></li>
+<li><p>Homologation</p></li>
+</ul>
+<p><strong>Preparation</strong>:
+After the approval of the change by the requester, the process of implementing the change begins. This process includes the following activities:</p>
+<ul class="simple">
+<li><p>Plan the implementation of the change</p></li>
+<li><p>Schedule the change (according to the change window of each application)</p></li>
+<li><p>Notify those involved (areas involved, customers, etc.)</p></li>
+</ul>
+<p>To start the implementation process you must:</p>
+<ul class="simple">
+<li><p>Fill out the document that contains the main information for planning the execution of the change</p></li>
+<li><p>Fill out the spreadsheet that contains the steps to be carried out</p></li>
+<li><p>Request authorization from the application owner using the form</p></li>
+<li><p>If approved, implement the change as planned</p></li>
+<li><p>If disapproved, the whole process is canceled and must be resumed if necessary</p></li>
+<li><p>If necessary, the approver may request additional information and/or adjustments that he/she deems necessary before approving the change</p></li>
+</ul>
+<p><strong>Implementation</strong>:
+After the approval of the change, the person responsible for the implementation must perform the necessary procedures to ensure that the planned steps are carried out.
+If the change is successfully implemented, notify involved parties and close the process.
+If the change was not successfully executed, trigger the rollback plan.</p>
 </div>
 </div>
 
